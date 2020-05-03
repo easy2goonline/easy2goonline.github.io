@@ -34,7 +34,7 @@ body{
 /*navigation bar*/
  .my-navbar {
  
-  background-color: #668cff;
+  background-color: white;
   border-color: #425766;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  
@@ -50,7 +50,7 @@ body{
 .my-navbar .navbar-text {color: #d7e2e9;}
  
 .my-navbar .navbar-nav > li > a {
-  color: #fff;
+  color: black;
   font-size:16px;
   font-family:"Times New Roman", Times, serif;
   }
@@ -272,12 +272,35 @@ body{
 @media screen and (max-width: 700px) {
 .box {
   margin:auto;
-  margin-bottom:25px;
+  margin-bottom:20px;
   display:block;
   width:90%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .container-fluid{
 	padding-top:20px;
+	margin-top:50px;
+}
+.header {
+  visibility:hidden;
+  height:0px;
+  width:100%;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-position:fixed;
+  padding-bottom:0px;
+}
+ /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+  .affix + .container-fluid {
+    padding-top:10px;
+  }
+  .my-navbar {
+ position:fixed;
+ width:100%;
 }
 }
