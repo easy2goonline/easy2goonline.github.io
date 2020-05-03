@@ -36,6 +36,7 @@ body{
  
   background-color: #668cff;
   border-color: #425766;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  
 }
  
@@ -166,8 +167,6 @@ body{
 } 
 }
 
-.row{margin-top:-45px;}
-
  
   /* Note: Try to remove the following lines to see the effect of CSS positioning */
   .affix {
@@ -184,9 +183,8 @@ body{
   margin:20px;
   display:inline-block;
   width:25%;
-  border:2px solid #668cff;
   padding:0px;
-  background: linear-gradient(to right,#668cff,white,white,white,white,white,white,white,white,white,white,#668cff);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .image {
@@ -276,9 +274,10 @@ body{
   margin:auto;
   margin-bottom:25px;
   display:block;
-  width:95%;
-  border:2px solid #668cff;
-  background: linear-gradient(to right,#668cff,white,white,white,white,white,white,white,white,white,white,#668cff);
+  width:90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+.container-fluid{
+	padding-top:20px;
+}
 }
