@@ -154,18 +154,7 @@ body{
  
 }
     
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
-    
-    
-	
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      
-      .row.content {height:auto;} 
-    }
 
-	}
 .responsive {
   max-width: 100%;
   height:auto;
