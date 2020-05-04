@@ -239,9 +239,7 @@ body{
 }
 /**CSS for Mobile view*********************************************************************/
 @media screen and (max-width: 700px) {
-.box{
-  display:visible;
-}
+
 .container-fluid{
 	padding-top:20px;
 	margin-top:50px;
