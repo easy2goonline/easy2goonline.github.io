@@ -32,7 +32,7 @@
                 }, 
                 landscape: { 
                     changePoint:640,
-                    visibleItems: 3,
+                    visibleItems: 2,
                     itemsToScroll: 2
                 },
                 tablet: { 
