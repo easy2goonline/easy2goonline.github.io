@@ -34,20 +34,33 @@ $(document).ready(function(){
   });
 })
 
-/*scroll to top button*/
+/*scroll to top button and skill bar*/
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
     document.getElementById("myBtn").style.display = "block";
+    
   } else {
     document.getElementById("myBtn").style.display = "none";
   }
+  if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+    document.getElementById("skillId1").style.display = "block";
+    document.getElementById("skillId2").style.display = "block";
+    document.getElementById("skillId3").style.display = "block";
+    document.getElementById("skillId4").style.display = "block";
+	jQuery(document).ready(function(){
+	jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+			width:jQuery(this).attr('data-percent')
+		},2000);
+	});
+});
+  } else {
+    document.getElementById("skillId").style.display = "none";
+  }
 }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+
+
