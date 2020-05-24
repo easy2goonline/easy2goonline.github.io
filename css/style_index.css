@@ -3,6 +3,7 @@
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: #818181;
+	padding:0px;
   }
   h1 span{
 	  font-family:sans-serif;
@@ -219,6 +220,9 @@
   #rightBorder {
 	  border-right: none;
     }
+	.container-fluid{
+		padding:10px;
+	}
   }
   @media screen and (max-width: 480px) {
     .logo {
