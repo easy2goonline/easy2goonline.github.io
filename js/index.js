@@ -49,7 +49,6 @@ function scrollFunction() {
     document.getElementById("skillId1").style.display = "block";
     document.getElementById("skillId2").style.display = "block";
     document.getElementById("skillId3").style.display = "block";
-    document.getElementById("skillId4").style.display = "block";
 	jQuery(document).ready(function(){
 	jQuery('.skillbar').each(function(){
 		jQuery(this).find('.skillbar-bar').animate({
@@ -58,7 +57,9 @@ function scrollFunction() {
 	});
 });
   } else {
-    document.getElementById("skillId").style.display = "none";
+    document.getElementById("skillId1").style.display = "none";
+    document.getElementById("skillId2").style.display = "none";
+    document.getElementById("skillId3").style.display = "none";
   }
 }
 // When the user clicks on the button, scroll to the top of the document
