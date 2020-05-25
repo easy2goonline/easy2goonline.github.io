@@ -34,22 +34,24 @@
   color: gray;
   font-size:20px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .10em solid #3c589c; /* The typwriter cursor */
+  border-right: none; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0em; /* Adjust as needed */
-  animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+  animation: typing 3.5s steps(600, end), blink-caret .5s step-end infinite;
+  font-family:Montserrat, sans-serif;
+  padding-top:15px;
 }
 @media screen and (max-width: 768px){
 	.typewriter h1 {
   color: gray;
-  font-size:10px;
+  font-size:13px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .10em solid #3c589c; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0em; /* Adjust as needed */
-  animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+  animation: typing 3.5s steps(600, end), blink-caret .5s step-end infinite;
+  padding-top:0px;
 }
 }
 /* The typing effect */
@@ -61,7 +63,7 @@
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  500% { border-color: gray }
+  50% { border-color: gray }
 }
   .navbar p{
 	  font-size:22px;
@@ -70,7 +72,8 @@
 	  font-family:courier;
   }
   .navbar p span{
-	  font-size:12px;
+	  font-size:17px;
+	  letter-spacing:0.1em;
   }
   .jumbotron {
 	background-repeat: no-repeat;
@@ -250,6 +253,7 @@
 	  margin-top:30px;
 	  padding-left:30px;
 	  padding-right:30px;
+	  padding-top:10px;
     }
 	.banner p{
 		font-size:12px;
