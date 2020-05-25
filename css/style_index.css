@@ -40,7 +40,7 @@
   letter-spacing: 0em; /* Adjust as needed */
   animation: typing 3.5s steps(600, end), blink-caret .5s step-end infinite;
   font-family:Montserrat, sans-serif;
-  padding-top:15px;
+  padding-top:13px;
 }
 @media screen and (max-width: 768px){
 	.typewriter h1 {
