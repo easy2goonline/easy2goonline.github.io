@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com -->
   <title>About</title>
   <link rel="icon" href="images/icon.png" type="image/png">
   <meta charset="utf-8">
@@ -13,6 +12,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   
+  <!--for font awesome-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  
 
   <script src="js/index.js"></script>
@@ -30,7 +32,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage"><p><b>VMS</b><span>webtech.com</span></p></a>
+      <a class="navbar-brand" href="https://easy2goonline.github.io"><p><b>VMS</b><span>webtech.com</span></p></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -46,17 +48,38 @@
 </nav>
 <style>
 .header{
-padding:100px;
-background-image :url("images/computers_circle.jpg");
-background-position:100% 100%;
-
+width;100%;
+height:300px;
+/* The image used */
+  background-image: url("images/computers_circle.jpg");
+  /* Add the blur effect */
+  filter: blur(2px);
+  -webkit-filter: blur(3px);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
-.header h2{
-backdrop-filter: blur(10px);
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  text-shadow: 1.5px 1.5px white;
 }
 </style>
 <!-- Container (About Section) -->
-<div class="header"><h2 class="text-center"><b>ABOUT</h2></b></div>
+<div class="header"></div>
+<h2 class="text-center bg-text"><b>ABOUT</h2></b>
 <div id="about" class="container-fluid">
   <br>
   <div class="row">
