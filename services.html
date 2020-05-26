@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>About</title>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>VMS</title>
   <link rel="icon" href="images/icon.png" type="image/png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,22 +12,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-  
   <!--for font awesome-->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  
-
+  <!--myfiles-->
   <script src="js/index.js"></script>
   <link href="css/style_index.css" rel="stylesheet" type="text/css">
   <link href="css/testimonial.css" rel="stylesheet" type="text/css">
-  
-  
-<style>
+  <style>
 .header{
-height:300px;
+height:250px;
 background-color: rgba(0, 0, 250, .1);
-padding-top:5%;
+padding-top:7%;
 }
 .header h2{
   font-size:50px;
@@ -36,29 +34,15 @@ padding-top:5%;
 .header a:hover{
   text-decoration:none;
 }
-.about{
-width:70%;
-margin-top:-8%;
-background-color:white;
-padding:0px;
-}
-.vsm-people{
-width:60%;
-padding:0px;
-border:2px solid blue;
-margin-left:2%;
-margin-right:2%;
+#pricing{
+background-color: rgba(0,0,0,.9);
 }
 @media screen and (max-width: 768px)
 {
 .header{
 height:200px;
 background-color: rgba(0, 0, 250, .1);
-padding-top:12%;
-}
-.about{
-width:100%;
-margin-top:-11%;
+padding-top:14%;
 }
 .header h2{
   font-size:35px;
@@ -67,8 +51,9 @@ margin-top:-11%;
 </style>
 </head>
 
-<!-------------------body---------------------->
-<body id="myPage" class="bg-grey" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+ <!-- Container (About Section) -->
+<div class="header"><h2 class="text-center bg-text"><b>OUR SERVICES</h2></b><a  href="https://easy2goonline.github.io"><p class="text-center">HOME<span> >  </a><a  href="https://easy2goonline.github.io/about.html">SERVICES</a></span></p></div>
 
 <nav class="navbar navbar-default navbar-fixed-top" >
   <div class="container" >
@@ -92,74 +77,145 @@ margin-top:-11%;
     </div>
   </div>
 </nav>
- <!-- Container (About Section) -->
-<div class="header"><h2 class="text-center bg-text"><b>ABOUT</h2></b><a  href="https://easy2goonline.github.io"><p class="text-center">HOME<span> >  </a><a  href="https://easy2goonline.github.io/about.html">ABOUT</a></span></p></div>
 
 
-<div  class="container-fluid about ">
-  
-  <div class="row" style="margin:3%">
-    <div class="col-sm-12">
-      <p style="text-align:justify"><img src="images/logo.png" width=70px;> is an indian platform which is providing many services like web Applications, Web Templates, Web Hosting, Resume/CV Template and many more. We at VMS <br>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></h3>
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h4>EXPLORE WHAT WE OFFER HERE !!</h4>
+  <br><br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4" id=rightBorder>
+      <span class="fas fa-chalkboard-teacher logo-small"></span>
+      <h4>Web Applications</h4>
+      <p>We Use latest technology to develope user friendly Web Applications.</p>
+    </div>
+    <div class="col-sm-4" id=rightBorder>
+      <span class="fas fa-desktop logo-small"></span>
+      <h4>Static Website Development</h4>
+      <p>We provide interactive and responsive static websites.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="fas fa-laptop-code logo-small"></span>
+      <h4>Dynamic Website Development</h4>
+      <p>We provide interactive and responsive Dynamic websites.</p>
     </div>
   </div>
-  
-  <!-- Team Section -->
-<div class="w3-container" style="padding:40px 16px" id="team">
-  <h3 class="w3-center">THE TEAM</h3>
-  <p class="w3-center w3-large">The ones who runs this company</p>
-  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-    <div class="col-sm-4 l3 m4 w3-margin-bottom ">
-      <div class="w3-card">
-        <img src="images/manjeet.jpg" alt="John" style="width:100%">
-        <div class="w3-container">
-          <h3>MANJEET SINGH</h3>
-          <p class="w3-opacity">CEO & Founder</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4" id=rightBorder>
+      <span class="fas fa-database logo-small"></span>
+      <h4>Web Hosting</h4>
+      <p>We provides Web Hosting facilities to clients so that they will access their applicaton from anywhere.</p>
     </div>
-    <div class="col-sm-4 l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="images/varsha.jpg" alt="Jane" style="width:100%">
-        <div class="w3-container">
-          <h3>PUJYTA SANGAM</h3>
-          <p class="w3-opacity">COO</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
+    <div class="col-sm-4" id=rightBorder>
+      <span class="fas fa-mobile-alt logo-small"></span>
+      <h4>Mobile Applications</h4>
+      <p>We Develope Responsive and Interactive Android Applications.</p>
     </div>
-    <div class="col-sm-4 l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="images/kavya.jpg" alt="Mike" style="width:100%">
-        <div class="w3-container">
-          <h3>SUMAN KUMARI</h3>
-          <p class="w3-opacity">MARKETING HEAD</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
+    <div class="col-sm-4">
+      <span class="fas fa-edit logo-small"></span>
+      <h4>Resume/CV Template</h4>
+      <p>We Provides free Resume/CV Templates to Students and Employees.</p>
     </div>
   </div>
 </div>
 
 
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2><b>PRICING</b></h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div><br>
+  <div class="row slideanim">
+    <div class="col-sm-3 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Static Website</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Lorem</p>
+          <p><strong>15</strong> Ipsum</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$19</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-3 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Dynamic Website</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Lorem</p>
+          <p><strong>25</strong> Ipsum</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$29</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-3 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Mobile Application</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$49</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>    
+	<div class="col-sm-3 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Templates</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$49</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>  
+  </div>
 </div>
-
-
-
 
 
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center"><b>WRITE HERE</b></h2>
+  <h2 class="text-center"><b>CONTACT</b></h2>
   <div class="row">
     <div class="col-sm-5">
-      <p>Write you query and we'll get back to you within 24 hours.</p>
+      <p>Contact us and we'll get back to you within 24 hours.</p>
       <p><span class="glyphicon glyphicon-map-marker"></span> Bhagirathi, IN</p>
       <p><span class="glyphicon glyphicon-phone"></span> 7654585137/7978484354</p>
       <p><span class="glyphicon glyphicon-envelope"></span> easygo.in@gmail.com</p>
@@ -183,6 +239,7 @@ margin-top:-11%;
   </div>
 </div>
 
+   
 <!-- Footer -->
 <footer class="page-footer font-small unique-color-dark" style="background-color:black">
 
@@ -316,6 +373,7 @@ margin-top:-11%;
 
 </footer>
 <!-- Footer -->
+
 <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="glyphicon glyphicon-chevron-up" ></span></button>
 </body>
 </html>
