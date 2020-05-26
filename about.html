@@ -22,34 +22,38 @@
   <link href="css/testimonial.css" rel="stylesheet" type="text/css">
   
   
-  <!--for testimonial-->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css">
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-<script> 
-$(document).ready(function(){
-    $("#testimonial-slider").owlCarousel({
-        items:1,
-        itemsDesktop:[1000,1],
-        itemsDesktopSmall:[979,1],
-        itemsTablet:[768,1],
-        pagination:true,
-        navigation:false,
-        navigationText:["",""],
-        slideSpeed:1000,
-        singleItem:true,
-        transitionStyle:"fade",
-        autoPlay:true
-    });
-});
-</script>
-
-
+<style>
+.header{
+height:300px;
+background-color: rgba(0, 0, 250, .1);
+padding-top:5%;
+}
+.header h2{
+  font-size:50px;
+  text-shadow:2px 2px black;
+  text-decoration:none;
+}
+.header a:hover{
+  text-decoration:none;
+}
+.about{
+width:70%;
+margin-top:-8%;
+background-color:white;
+padding:0px;
+}
+.vsm-people{
+width:60%;
+padding:0px;
+border:2px solid blue;
+margin-left:2%;
+margin-right:2%;
+}
+</style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<!-------------------body---------------------->
+<body id="myPage" class="bg-grey" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <nav class="navbar navbar-default navbar-fixed-top" >
   <div class="container" >
@@ -73,263 +77,74 @@ $(document).ready(function(){
     </div>
   </div>
 </nav>
-<style>
-.header{
-width;100%;
-height:300px;
-/* The image used */
-  background-image: url("images/computers_circle.jpg");
-  /* Add the blur effect */
-  filter: blur(2px);
-  -webkit-filter: blur(3px);
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-/* Position text in the middle of the page/image */
-.bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  font-weight: bold;
-  border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
-  text-shadow: 1.5px 1.5px white;
-}
-</style>
  <!-- Container (About Section) -->
-<div class="header"></div>
-<h2 class="text-center bg-text"><b>ABOUT</h2></b><br>
-<a  href="https://easy2goonline.github.io"><p>HOME<span> >  </a><a  href="https://easy2goonline.github.io/about.html">ABOUT</a></span></p>
-<div id="about" class="container-fluid">
-  <br>
-  <div class="row">
-    <div class="col-sm-8">
+<div class="header"><h2 class="text-center bg-text"><b>ABOUT</h2></b><a  href="https://easy2goonline.github.io"><p class="text-center">HOME<span> >  </a><a  href="https://easy2goonline.github.io/about.html">ABOUT</a></span></p></div>
+
+
+<div  class="container-fluid about ">
+  <div style="width:100%"><img src="images/team.jpg" width=100%></div>
+  <div class="row" style="margin:3%">
+    <div class="col-sm-12">
       <p style="text-align:justify"><img src="images/logo.png" width=70px;> is an indian platform which is providing many services like web Applications, Web Templates, Web Hosting, Resume/CV Template and many more. We at VMS <br>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></h3>
-      <br><button class="btn btn-default btn-lg">Get in Touch</button>
     </div>
-    <div class="col-sm-4" style="box-shadow: 0 0 10px 2px #3C589C;padding:0px;">
-      <img src="images/about.jpg" width=100% >
+  </div>
+  
+  <!-- Team Section -->
+<div class="w3-container" style="padding:40px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">The ones who runs this company</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="col-sm-4 l3 m4 w3-margin-bottom ">
+      <div class="w3-card">
+        <img src="images/manjeet.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>MANJEET SINGH</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/varsha.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>PUJYTA SANGAM</h3>
+          <p class="w3-opacity">COO</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/kavya.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>SUMAN KUMARI</h3>
+          <p class="w3-opacity">MARKETING HEAD</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
 
-<!-- Container (value mission Section) -->
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span ><img src="images/mvv.png" style="width:100%"></span>
-    </div>
-    <div class="col-sm-8">
-      <h3><strong>VALUES :</strong><p>To be Open Honest and Fair, Whaever we do, We do it right and We dot together.</p></h3>
-      <h3><strong>MISSION :</strong><p>Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</py><br>
-      <h3><strong>VISION :</strong><p>Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></h3>
-    </div>
-  </div>
 </div>
-<!-- Container (value mission Section) -->
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span ><img src="images/mvv.png" style="width:100%"></span>
-    </div>
-    <div class="col-sm-8">
-      <h3><strong>VALUES :</strong><p>To be Open Honest and Fair, Whaever we do, We do it right and We dot together.</p></h3>
-      <h3><strong>MISSION :</strong><p>Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</py><br>
-      <h3><strong>VISION :</strong><p>Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></h3>
-    </div>
-  </div>
-</div><!-- Container (value mission Section) -->
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span ><img src="images/mvv.png" style="width:100%"></span>
-    </div>
-    <div class="col-sm-8">
-      <h3><strong>VALUES :</strong><p>To be Open Honest and Fair, Whaever we do, We do it right and We dot together.</p></h3>
-      <h3><strong>MISSION :</strong><p>Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</py><br>
-      <h3><strong>VISION :</strong><p>Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></h3>
-    </div>
-  </div>
-</div><!-- Container (value mission Section) -->
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span ><img src="images/mvv.png" style="width:100%"></span>
-    </div>
-    <div class="col-sm-8">
-      <h3><strong>VALUES :</strong><p>To be Open Honest and Fair, Whaever we do, We do it right and We dot together.</p></h3>
-      <h3><strong>MISSION :</strong><p>Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</py><br>
-      <h3><strong>VISION :</strong><p>Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></h3>
-    </div>
-  </div>
-</div><!-- Container (value mission Section) -->
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span ><img src="images/mvv.png" style="width:100%"></span>
-    </div>
-    <div class="col-sm-8">
-      <h3><strong>VALUES :</strong><p>To be Open Honest and Fair, Whaever we do, We do it right and We dot together.</p></h3>
-      <h3><strong>MISSION :</strong><p>Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</py><br>
-      <h3><strong>VISION :</strong><p>Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></h3>
-    </div>
-  </div>
-</div><!-- Container (value mission Section) -->
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span ><img src="images/mvv.png" style="width:100%"></span>
-    </div>
-    <div class="col-sm-8">
-      <h3><strong>VALUES :</strong><p>To be Open Honest and Fair, Whaever we do, We do it right and We dot together.</p></h3>
-      <h3><strong>MISSION :</strong><p>Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</py><br>
-      <h3><strong>VISION :</strong><p>Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></h3>
-    </div>
-  </div>
-</div><!-- Container (value mission Section) -->
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span ><img src="images/mvv.png" style="width:100%"></span>
-    </div>
-    <div class="col-sm-8">
-      <h3><strong>VALUES :</strong><p>To be Open Honest and Fair, Whaever we do, We do it right and We dot together.</p></h3>
-      <h3><strong>MISSION :</strong><p>Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</py><br>
-      <h3><strong>VISION :</strong><p>Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></h3>
-    </div>
-  </div>
-</div><!-- Container (value mission Section) -->
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span ><img src="images/mvv.png" style="width:100%"></span>
-    </div>
-    <div class="col-sm-8">
-      <h3><strong>VALUES :</strong><p>To be Open Honest and Fair, Whaever we do, We do it right and We dot together.</p></h3>
-      <h3><strong>MISSION :</strong><p>Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</py><br>
-      <h3><strong>VISION :</strong><p>Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></h3>
-    </div>
-  </div>
-</div><!-- Container (value mission Section) -->
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span ><img src="images/mvv.png" style="width:100%"></span>
-    </div>
-    <div class="col-sm-8">
-      <h3><strong>VALUES :</strong><p>To be Open Honest and Fair, Whaever we do, We do it right and We dot together.</p></h3>
-      <h3><strong>MISSION :</strong><p>Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</py><br>
-      <h3><strong>VISION :</strong><p>Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></h3>
-    </div>
-  </div>
-</div><!-- Container (value mission Section) -->
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span ><img src="images/mvv.png" style="width:100%"></span>
-    </div>
-    <div class="col-sm-8">
-      <h3><strong>VALUES :</strong><p>To be Open Honest and Fair, Whaever we do, We do it right and We dot together.</p></h3>
-      <h3><strong>MISSION :</strong><p>Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</py><br>
-      <h3><strong>VISION :</strong><p>Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></h3>
-    </div>
-  </div>
-</div><!-- Container (value mission Section) -->
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span ><img src="images/mvv.png" style="width:100%"></span>
-    </div>
-    <div class="col-sm-8">
-      <h3><strong>VALUES :</strong><p>To be Open Honest and Fair, Whaever we do, We do it right and We dot together.</p></h3>
-      <h3><strong>MISSION :</strong><p>Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</py><br>
-      <h3><strong>VISION :</strong><p>Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></h3>
-    </div>
-  </div>
-</div><!-- Container (value mission Section) -->
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span ><img src="images/mvv.png" style="width:100%"></span>
-    </div>
-    <div class="col-sm-8">
-      <h3><strong>VALUES :</strong><p>To be Open Honest and Fair, Whaever we do, We do it right and We dot together.</p></h3>
-      <h3><strong>MISSION :</strong><p>Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</py><br>
-      <h3><strong>VISION :</strong><p>Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></h3>
-    </div>
-  </div>
-</div><!-- Container (value mission Section) -->
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span ><img src="images/mvv.png" style="width:100%"></span>
-    </div>
-    <div class="col-sm-8">
-      <h3><strong>VALUES :</strong><p>To be Open Honest and Fair, Whaever we do, We do it right and We dot together.</p></h3>
-      <h3><strong>MISSION :</strong><p>Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</py><br>
-      <h3><strong>VISION :</strong><p>Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></h3>
-    </div>
-  </div>
-</div><!-- Container (value mission Section) -->
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span ><img src="images/mvv.png" style="width:100%"></span>
-    </div>
-    <div class="col-sm-8">
-      <h3><strong>VALUES :</strong><p>To be Open Honest and Fair, Whaever we do, We do it right and We dot together.</p></h3>
-      <h3><strong>MISSION :</strong><p>Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</py><br>
-      <h3><strong>VISION :</strong><p>Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></h3>
-    </div>
-  </div>
-</div><!-- Container (value mission Section) -->
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span ><img src="images/mvv.png" style="width:100%"></span>
-    </div>
-    <div class="col-sm-8">
-      <h3><strong>VALUES :</strong><p>To be Open Honest and Fair, Whaever we do, We do it right and We dot together.</p></h3>
-      <h3><strong>MISSION :</strong><p>Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</py><br>
-      <h3><strong>VISION :</strong><p>Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></h3>
-    </div>
-  </div>
-</div>
+
+
 
 
 
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center"><b>CONTACT</b></h2>
+  <h2 class="text-center"><b>WRITE HERE</b></h2>
   <div class="row">
     <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p>Write you query and we'll get back to you within 24 hours.</p>
       <p><span class="glyphicon glyphicon-map-marker"></span> Bhagirathi, IN</p>
       <p><span class="glyphicon glyphicon-phone"></span> 7654585137/7978484354</p>
       <p><span class="glyphicon glyphicon-envelope"></span> easygo.in@gmail.com</p>
@@ -352,57 +167,7 @@ height:300px;
     </div>
   </div>
 </div>
-<!-- Container (Testimonial Section) -->
-  <div class="container-fluid text-center container-testimonial">
-  <h2><b>TESTIMONIAL</b></h2><br>
-        <div class="container">
 
-            <div class="row">
-                <div class="col-md-offset-3 col-md-6">
-                    <div id="testimonial-slider" class="owl-carousel">
-                        <div class="testimonial">
-                            <div class="pic">
-                                <img src="images/varsha.jpg" alt=""/>
-                            </div>
-                            <h3 class="testimonial-title">
-                                Williamson<small>, Web Developer</small>
-                            </h3>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam enim diam, tempus vel ultricies viverra, luctus in elit. Aliquam tempus blandit velit, in pharetra ex volutpat a. Cras eu augue ac nisl tempor commodo.
-                            </p>
-                        </div>
-
-                        <div class="testimonial">
-                            <div class="pic">
-                                <img src="images/adarsh.jpg" alt=""/>
-                            </div>
-                            <h3 class="testimonial-title">
-                                kristiana<small>, Web Designer</small>
-                            </h3>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam enim diam, tempus vel ultricies viverra, luctus in elit. Aliquam tempus blandit velit, in pharetra ex volutpat a. Cras eu augue ac nisl tempor commodo.
-                            </p>
-                        </div>
-
-                        <div class="testimonial">
-                            <div class="pic">
-                                <img src="images/kavya.jpg" alt=""/>
-                            </div>
-                            <h3 class="testimonial-title">
-                                Steve Thomas<small>, Web Developer</small>
-                            </h3>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam enim diam, tempus vel ultricies viverra, luctus in elit. Aliquam tempus blandit velit, in pharetra ex volutpat a. Cras eu augue ac nisl tempor commodo.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-   
 <!-- Footer -->
 <footer class="page-footer font-small unique-color-dark" style="background-color:black">
 
