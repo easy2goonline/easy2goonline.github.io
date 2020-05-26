@@ -42,10 +42,6 @@
     margin: 0;
 }
 
-.heading-title
-{
-	margin-bottom: 100px;
-}
 .testimonial .description:before{
     content: "\f10d";
     font-family: fontawesome;
