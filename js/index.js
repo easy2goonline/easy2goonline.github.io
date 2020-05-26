@@ -49,7 +49,14 @@ function scrollFunction() {
 
   /*skillbar*/
 
-
+  /*skillbar*/
+  jQuery(document).ready(function(){
+	jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+			width:jQuery(this).attr('data-percent')
+		},2000);
+	});
+  });
 
  
 // When the user clicks on the button, scroll to the top of the document
