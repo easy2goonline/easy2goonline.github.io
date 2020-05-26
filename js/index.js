@@ -45,8 +45,10 @@ function scrollFunction() {
   } else {
     document.getElementById("myBtn").style.display = "none";
   }
+}
+
   /*skillbar*/
-  if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+  
   jQuery(document).ready(function(){
 	jQuery('.skillbar').each(function(){
 		jQuery(this).find('.skillbar-bar').animate({
@@ -54,8 +56,7 @@ function scrollFunction() {
 		},2000);
 	});
   });
-  }
-}
+
 
  
 // When the user clicks on the button, scroll to the top of the document
