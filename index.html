@@ -15,7 +15,7 @@
   <!--for font awesome-->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <!--myfiles-->
   <script src="js/index.js"></script>
   <link href="css/style_index.css" rel="stylesheet" type="text/css">
@@ -49,10 +49,6 @@ $(document).ready(function(){
     });
 });
 </script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-
-</style>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -65,13 +61,12 @@ $(document).ready(function(){
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="https://easy2goonline.github.io"><p><b>VMS</b><span>webtech.com</span></p></a>
+      <a class="navbar-brand" href="https://easy2goonline.github.io"><img src="images/logoTop.png" width=60% style="margin-top:-12px"><p><b>VMS</b><span>webtech.com</span></p></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT</a></li>
 	    <li><a href="#services">SERVICES</a></li>
-        <li><a href="#pricing">PRICING</a></li>
         <li><a href="#portfolio">PORTFOLIO</a></li>
         <li><a href="#contact">CONTACT</a></li>
         <li><a href="#blog">BLOG</a></li>
@@ -105,18 +100,20 @@ $(document).ready(function(){
   <h2 class="text-center"><b>ABOUT</h2></b><br>
   <div class="row">
     <div class="col-sm-8">
-      <p style="text-align:justify"><img src="images/logo.png" width=70px;> is an indian platform which is providing many services like web Applications, Web Templates, Web Hosting, Resume/CV Template and many more. We at VMS <br>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></h3>
-      <br> <a href="https://easy2goonline.github.io/about.html"><button class="button button-about text-center"><span>Get in Touch</span></button></a>
+      <p style="text-align:justify; font-size:18px;"> Welcome!<br>
+           We believe everyone deserves to have an online platform to show their business in Digital world, our goal is to remove all technical barriers that can prevent business owners from making their own online platform. 
+		   The Team VMS is very much excited to make your work available online by providing various services. We're here to help in your excited journey!!</p>
+
+      <br><a href="https://easy2goonline.github.io/about.html"><button class="button button-about text-center"><span>Know More</span></button></a>
     </div>
     <div class="col-sm-4" style="box-shadow: 0 0 10px 2px #3C589C;padding:0px;">
       <img src="images/about.jpg" width=100% >
     </div>
   </div>
 </div>
-
+<!--Key features-->
 <div class="w3-container text-center" style="padding:60px 0px" id="about1" >
-  <p class="w3-center w3-large" >Key features of our company</p>
+  <p class="w3-center w3-large" ><span class="fas fa-key"> </span> Key features of our company</p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-quarter">
       <span class="fas fa-lightbulb logo-small" style="color:yellow"></span>
@@ -190,10 +187,7 @@ $(document).ready(function(){
   <div class="w3-row-padding">
     <div class="w3-col m6">
       <h2><b>OUR SKILLS</b></h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-      tempor incididunt ut labore et dolore.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-      tempor incididunt ut labore et dolore.</p>
+      <p style="text-align:justify; font-size:17px">We are best at Creativity, Innovative and Time Management skills because we provide unique and user friendly products to our customers by taking care of their needs.<br>We also believe in Teamwork, The average percentage of different technical and non-technical  skills of our team is shown. Have a look!!
     </div>
     <div class="w3-col m6 slideanim">
     <div id="skillId1" class="skillbar clearfix " data-percent="95%">
@@ -208,10 +202,16 @@ $(document).ready(function(){
 	<div class="skill-bar-percent">90%</div>
     </div> <!-- End Skill Bar -->
 
-    <div id="skillId3" class="skillbar clearfix " data-percent="80%">
+    <div id="skillId3" class="skillbar clearfix " data-percent="85%">
 	<div class="skillbar-title" style="background: #2c3e50;"><span class="fas fa-mobile-alt">  Mobile App</span></div>
 	<div class="skillbar-bar" style="background: #2c3e50;"></div>
-	<div class="skill-bar-percent">80%</div>
+	<div class="skill-bar-percent">85%</div>
+    </div> <!-- End Skill Bar -->
+	
+	<div id="skillId3" class="skillbar clearfix " data-percent="95%">
+	<div class="skillbar-title" style="background: green;"><span class="fas fa-edit">  Creativity</span></div>
+	<div class="skillbar-bar" style="background: green;"></div>
+	<div class="skill-bar-percent">95%</div>
     </div> <!-- End Skill Bar -->
 
     </div>
@@ -313,9 +313,10 @@ $(document).ready(function(){
   <h2 class="text-center"><b>CONTACT</b></h2>
   <div class="row">
     <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Bhagirathi, IN</p>
-      <p><span class="glyphicon glyphicon-phone"></span> 7654585137/7978484354</p>
+      <p>Contact us by writing here and we'll get back to you within 24 hours. <span class="glyphicon glyphicon-hand-right"></span></p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Bihar, IN</p>
+      <p><span class="glyphicon glyphicon-phone"></span> 7978484354</p>
+      <p><span class="fa fa-whatsapp" style="margin:-6px "></span> 7654585137</p>
       <p><span class="glyphicon glyphicon-envelope"></span> manjeetsingh51097@gmail.com</p>
     </div>
     <div class="col-sm-7 slideanim">
@@ -349,7 +350,7 @@ $(document).ready(function(){
 
         <!-- Grid column -->
         <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-          <h6 class="mb-0" style="color:#ffffff">Get connected with us on social networks!</h6>
+          <h6 class="mb-0" style="color:#ffffff">Get connected with us on social networks! </h6>
         </div>
         <!-- Grid column -->
 
@@ -383,13 +384,12 @@ $(document).ready(function(){
     <div class="row mt-3">
 
       <!-- Grid column -->
-      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 logo-footer">
 
         <!-- Content -->
         <img src="images/logofooter.png" width=40% style="margin-top:10px"> 
-        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-          consectetur
-          adipisicing elit.</p>
+        <p>Understand | Analyse | Develop | Deliver
+		<br>We're here to help in your excited journey!!</p>
 		  <p>VMSwebtech.com Made with <span class="glyphicon glyphicon-heart"> </span> in Bihar IN</p>
 
       </div>
@@ -404,16 +404,13 @@ $(document).ready(function(){
           <a href="#!">WebApplication</a>
         </p>
         <p>
-          <a href="#!">WebDesigning</a>
-        </p>
-        <p>
-          <a href="#!">WebHosting</a>
-        </p>
-        <p>
           <a href="#!">Android Applications</a>
         </p>
+        <p>
+          <a href="#!">Web Templates</a>
+        </p>
 		<p>
-          <a href="#!">Free Templates</a>
+          <a href="#!">Resume/CV Templates</a>
         </p>
 
       </div>
@@ -425,7 +422,7 @@ $(document).ready(function(){
         <!-- Links -->
         <h2 class="text-uppercase font-weight-bold" style="font-size:20px">Useful links</h2>
         <p>
-          <a href="#!">Create Account</a>
+          <a href="#!">About</a>
         </p>
         <p>
           <a href="#!">Login</a>
@@ -446,13 +443,13 @@ $(document).ready(function(){
         <!-- Links -->
         <h2 class="text-uppercase font-weight-bold" style="font-size:20px">Contact</h2>
         <p>
-          <i class="fas fa-home mr-3"></i> Bhagirathi, Bihar, IN</p>
+          <i class="fas fa-home mr-3"></i> Bihar, IN</p>
         <p>
-          <i class="fas fa-envelope mr-3"></i> info@vmswebtech.com</p>
+          <i class="fas fa-envelope mr-3"></i> manjeetsingh51097@gmail.com</p>
         <p>
-          <i class="fas fa-phone mr-3"></i> 7654585137</p>
+          <i class="fa fa-whatsapp mr-3"></i>7654585137</p>
         <p>
-          <i class="fas fa-print mr-3"></i> 7978484354</p>
+          <i class="fas fa-phone mr-3"></i> &nbsp 7978484354</p>
 
       </div>
       <!-- Grid column -->
@@ -465,7 +462,7 @@ $(document).ready(function(){
   <hr>
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3" >© 2020 Copyright:
-    <a href="https://vmswebtech.com/"> vmswebtech.com</a>
+    <a href="https://vmswebtech.com/"> vmswebtech.com </a>All Rights Reserved
   </div>
   <!-- Copyright -->
 
