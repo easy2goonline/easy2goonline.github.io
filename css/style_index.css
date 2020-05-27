@@ -148,10 +148,16 @@ background-color: rgba(0,0,0,.9);
     color: #3C589C;
     font-size: 200px;
   }
+  .logo-header img{
+		  width:200px;
+	  }
   @media screen and (max-width:768px)
   {
 	  .logo-footer img{
 		  width:20%;
+	  }
+	  .logo-header img{
+		  width:140px;
 	  }
   }
   
