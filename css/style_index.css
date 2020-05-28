@@ -42,7 +42,7 @@
  background-color: rgba(0,0,0,.7);
  padding:50px;
 }
-@media screen and (max-width:768)
+@media screen and (max-width:768px)
 {
 	.background-blur{
       padding:10px;
