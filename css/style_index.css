@@ -34,9 +34,14 @@
   }
   
   #about1, #portfolio{
-background-color: rgba(0,0,0,.9);
+	  background: url(manjeet.jpg) repeat;
+	  padding:0px;
+	  
 }
-
+.background-blur{
+ background-color: rgba(0,0,0,.7);
+ padding:50px;
+}
   /*typewriter*/
 
 /* DEMO-SPECIFIC STYLES */
